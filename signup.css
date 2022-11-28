@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section start */
+.header {
+    background-color: whitesmoke;
+    height: 7vh;
+    position: sticky;
+    opacity: 0.7;
+    top: 0;
+    z-index: 1;
+}
+
+.header h1 {
+    color: black;
+    font-size: 25px;
+    padding-right: 150px;
+    text-decoration: none !important;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    font-family: cursive;
+    cursor: pointer;
+    /* visibility: hidden; */
+    animation-fill-mode: forwards;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+    padding: 3px 40px;
+    align-items: center;
+}
+
+.navlinks {
+    flex: 1;
+    animation: movedown 1s linear 1;
+    animation-delay: 2s;
+    /* visibility: hidden; */
+    animation-fill-mode: forwards;
+
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navlinks ul li a:hover {
+    /* color: rgb(204, 0, 194); */
+    color: rgb(12, 135, 192);
+    /* transform: scale(0.8); */
+}
+
+.sub-navlinks {
+    display: block;
+    width: 170px;
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.sub-navlinks ul li a {
+    transition: .5s;
+    /* display: inline; */
+}
+
+.sub-navlinks ul li p {
+    transition: .5s;
+    display: flex;
+}
+
+.sub-navlinks ul li p span {
+    font-size: 8px;
+    color: red;
+    /* text-align: center; */
+}
+
+.navlinks ul li:hover>.sub-navlinks {
+    color: white;
+    z-index: 1;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    opacity: .9;
+}
+
+.navlinks ul li:hover>.sub-navlinks ul li {
+    width: 170px;
+    z-index: 2;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.navlinks ul li:hover>.sub-navlinks ul li a:hover {
+    /* color: rgb(255, 2, 242); */
+    color: rgb(12, 135, 192);
+
+    /* transform: translateX(2px); */
+}
+
+.icons i {
+    font-size: 18px;
+    padding-top: 5px;
+    /* color: whitesmoke; */
+    color: black;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    animation: movedown 1s linear 1;
+    animation-delay: 3s;
+    /* visibility: hidden; */
+    animation-fill-mode: forwards;
+}
+
+.icon {
+    display: inline-block;
+    padding: 0px 17px;
+    color: rgb(46, 46, 46);
+    text-align: center;
+}
+.choose{
+    /* text-align: center; */
+    /* display: none; */
+    width: 12%;
+    margin: 10px 20px;
+    background-color: black;
+    position: absolute;
+    top:40px;
+    right: 2%;
+    padding: 5px 10px;
+    transition: 1s;
+    /* z-index: -5; */
+    opacity: 0;
+    visibility: hidden;
+}
+.choose p{
+    font-size: 13px;
+    margin: 3px 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    transition: .5s;
+    color: whitesmoke;
+}
+.choose a{
+    text-decoration: none;
+
+}
+.choose p:hover{
+    color: rgb(12, 135, 192);
+    transform: translateX(10px)
+}
+
+.sub-section {
+    height: 5vh;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(175, 175, 243);
+    padding: 0px 55px;
+}
+
+.sub-section span {
+    display: inline-block;
+    color: black;
+    margin: 5px 5px;
+    padding: 5px 0px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.sub-section span a {
+    text-decoration: none;
+    color: black;
+}
+
+.container h1 {
+    color: black;
+    font-size: 23px;
+    font-family: cursive;
+    font-weight: 800;
+    /* position: absolute;
+    top: 10%;
+    left: 40%; */
+    text-align: center;
+    margin: 150px 0px 0px 20px;
+    padding: 0px 10px;
+}
+
+.create-account {
+    width: 70%;
+    margin: 20px 200px 80px 250px;
+    text-align: center;
+    display: flex;
+}
+
+.sign-up {
+    /* border: 1px solid rgb(0, 0, 0,.1) ; */
+    width: 30%;
+    flex-basis: 48%;
+    margin: 0px 300px;
+    padding: 20px 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    display: block;
+    margin: 20px 15px;
+    padding: 10px 15px;
+    width: 90%;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: .1px solid rgb(0, 0, 0, .3);
+    font-size: 13px;
+
+}
+
+input::placeholder {
+    opacity: .5;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    color: black;
+}
+
+input[type="checkbox"] {
+    font-size: 12px;
+    padding: 0px 10px;
+    accent-color: black;
+}
+
+.sign-up p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.sign-up p span {
+    padding: 0px 5px;
+}
+
+/* footer section start  */
+.foot{
+    /* background: rgb(0, 0, 0); */
+    /* background: rgb(160, 160, 243); */
+    background: rgb(175, 175, 243);
+    width: 100%;
+    height: 50vh;
+    /* border: 2px solid red; */
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 50px; */
+    /* padding: 120px 50px; */
+    /* border: 2px solid wheat; */
+}
+.sub-footer{
+    /* border: 2px solid cyan; */
+    margin: 20px 80px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.sub-footer a{
+    /* text-transform: uppercase; */
+    text-decoration: none;
+}
+.footer h2{
+    /* color: whitesmoke; */
+    padding: 10px 0;
+    /* font-family: 'Akaya Telivigala', cursive; */
+    /* color: rgb(204, 204, 204); */
+    color: black;
+}
+.footer p{
+    /* color: whitesmoke; */
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: black;
+    padding: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer p:hover{
+    /* color: rgb(255, 2, 242); */
+    color: rgb(12, 135, 192);
+    transform: scale(1.1);
+}
+.footer i{
+    /* color: whitesmoke; */
+    color: black;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.media-contact{
+    /* width:    80%; */
+    display: flex;
+    justify-content: center;
+}
+.social-media{
+    padding: 10px 15px;
+    margin: 0px 10px 10px 10px;  
+}
+.social-media i{
+    font-size: 20px;
+    /* color: whitesmoke; */
+    color: black;
+    transition: .5s;
+}
+#insta i:hover{
+    transform: rotate(360deg);
+    color: rgb(226, 42, 119);
+}
+#fb i:hover{
+    transform: rotate(360deg);
+    color: rgb(14, 103, 145);
+}
+#tweet i:hover{
+    transform: rotate(360deg);
+    color: rgb(12, 135, 192);
+}
+
+#yt i:hover{
+    transform: rotate(360deg);
+    color: rgb(207, 13, 13);
+}
+
+.copy p{
+    /* color: whitesmoke; */
+    color: black;
+    text-align: center;
+    margin: 22px 20px;
+    font-size: 14px;
+}
+.copy span{
+    color: rgb(73, 73, 73);
+    transition: .5s;
+    cursor: pointer;
+}
+.copy span:hover{
+    /* color: rgb(255, 2, 242); */
+    color: rgb(12, 135, 192);
+    transform: scale(1.1);
+}
+/* footer section end  */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account - Staxer</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="images/bgheadphone.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@200;400;500;600;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <body>
+        <section class="header">
+            <nav class="nav-bar">
+                <h1>STAXER.</h1>
+                <div class="navlinks" id="navbar">
+    
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="index.html#new-products">Categories</i></a>
+                        </li>
+                        <li>
+                            <a href="index.html#arrivals">Our story</a>
+                            
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <div class="icon" id="user">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        <i class="fa-regular fa-user" id="user-acc" onclick="myclick()" title="Account"></i>
+                        
+                    </div>
+                    
+                    <div class="icon" id="cart">
+                        <!-- <img src="images/shopping-cart.png" alt=""> -->
+                        <a href="cart.html"><i class="fa-solid fa-cart-arrow-down" title="Your Cart"></i></a>
+                        <!-- <i class="fa-light fa-cart-arrow-down"></i> -->
+                        <!-- <p>Your Cart</p> -->
+                    </div>
+    
+                </div>
+            </nav>
+            <div class="choose" id="choose">
+                <a href="login.html"><p>Log In</p></a>
+                <a href="signup.html"><p>Sign Up</p></a>
+                <a href="logout.html"><p>Log Out</p></a>
+            </div>
+        </section>
+    
+        <section class="container">
+            <div class="sub-section">
+                <span><a href="index.html">HOME</a></span>
+                <span>|</span>
+                <span><p>CREATE ACCOUNT</p></span>
+            </div>
+            <h1>Register</h1>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, distinctio!</p> -->
+        </section>
+
+        <section class="create-account">
+            <div class="sign-up">
+                <input type="text" name="txtname" placeholder="First Name" required>
+                <input type="text" name="txtname" placeholder="Last Name" required>
+                <input type="email" name="txtemail" placeholder="Email" aria-required="true" required>
+                <input type="password" name="pwd" placeholder="Password" required>
+                <p><input type="checkbox" name="chkbox" class="chk" checked><span>Subscribe to stay updated with new products and offers</span></p>
+                <input type="submit" value="Submit" style="cursor: pointer;">
+                <p>Already Have an Account?<span><a href="login.html"><i><b>Click Here!</b></i></a></span></p>
+            </div>
+        </section>
+
+        <footer class="foot">
+            <div class="footer">
+                <div class="sub-footer">
+                    <h2>STAXER</h2>
+                    <p>Contact US</p>
+                    <p><i class="fa-solid fa-phone"></i>+9779841266717</p>
+                    <p><i class="fa-solid fa-envelope"></i>jenish112@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>New Baneshwor, Kathmandu</p>
+                    <!-- <div class="social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-youtube"></i>
+                </div> -->
+                </div>
+                <div class="sub-footer">
+                    <h2>Categories</h2>
+                    <p>Hot Deals</p>
+                    <p>Headphones</p>
+                    <p>Airpods</p>
+                    <p>Smart Watch</p>
+                </div>
+                <div class="sub-footer">
+                    <h2>INFORMATION</h2>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Privacy Policy</p>
+                    <p>Orders & Returns</p>
+                    <p>Terms & Conditions</p>
+                </div>
+                <div class="sub-footer">
+                    <h2>Service</h2>
+                    <a href="login.html"><p>My Accounts</p></a>
+                    <p>View My Cart</p>
+                    <p>My WishList</p>
+                    <p>Track My Order</p>
+                    <p>Help</p>
+                </div>
+            </div>
+            <div class="media-contact">
+                <div class="social-media" id="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="social-media" id="fb">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="social-media" id="tweet">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="social-media" id="yt">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="copy">
+                <p>Copyright &copy; 2022. Designed By <span>Jenish Pokhrel.</span> All Rights Reserved.</p>
+            </div>
+        </footer>
+
+<!-- <script>
+    var a;
+        function myclick(){
+            if(a==1){
+                document.getElementById("choose").style.opacity="1";
+                document.getElementById("choose").style.visibility="visible";
+                return a=0;
+            }else{
+                document.getElementById("choose").style.opacity="0";
+                document.getElementById("choose").style.visibility="hidden";
+                return a=1;
+            }
+        }
+</script> -->
+    <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/f402bda8f3.js" crossorigin="anonymous"></script>
+</body>
+</html>

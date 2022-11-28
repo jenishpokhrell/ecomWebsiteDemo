@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAXER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/bgheadphone.png" type="image/x-icon">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@200;400;500;600;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--                           header section             -->
+
+
+    <section class="header">
+        <nav class="nav-bar">
+            <h1>STAXER.</h1>
+            <div class="navlinks" id="navbar">
+
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#new-products">Categories</i></a>
+                    </li>
+                    <li>
+                        <a href="#arrivals">Our story</a>
+                        
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <div class="icon" id="user">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <i class="fa-regular fa-user" id="user-acc" onclick="myclick()" ondblclick="myclick12()" title="Account"></i>
+                    
+                </div>
+                <!-- <div class="icon" id="wish">
+                    <a href="wishlist.html"><i class="fa-solid fa-heart" title="Your wishlist">
+                    </i></a>
+                </div> -->
+                <div class="icon" id="cart">
+                    <!-- <img src="images/shopping-cart.png" alt=""> -->
+                    <a href="cart.html"><i class="fa-solid fa-cart-arrow-down" title="Your Cart"></i></a>
+                </div>
+
+            </div>
+        </nav>
+        <div class="choose" id="choose">
+            <a href="login.html"><p>Log In</p></a>
+            <a href="signup.html"><p>Sign Up</p></a>
+            <a href="logout.html"><p>Log Out</p></a>
+        </div>
+    </section>
+
+    <!--                             home section                -->
+    <section class="container">
+        <!-- <div id="img1">
+        <img src="images/airpods.png" alt="">
+    </div> -->
+        <div id="img2">
+            <img src="assets/cont1.png" alt="">
+        </div>
+        <!-- <div id="img3">
+        <img src="images/smart-watch.png" alt="">
+    </div> -->
+        <div class="media">
+            <!-- <div class="sub-media" id="icon1"> -->
+
+            <a href=""><img src="images/instagram2.png" alt="Instagram"></a>
+            <!-- </div> -->
+
+            <!-- <div class="sub-media" id="icon2"> -->
+
+            <img src="images/facebook1.png" alt="Facebook">
+            <!-- </div> -->
+            <!-- <div class="sub-media" id="icon3"> -->
+
+            <img src="images/twitter3.png" alt="Twitter">
+            <!-- </div> -->
+            <!-- <div class="sub-media" id="icon4"> -->
+
+            <img src="images/youtube4.png" alt="Youtube">
+            <!-- </div> -->
+        </div>
+        <div class="container-aft">
+            <a href="">2022 Products</a>
+            <h2>YOUR MUSIC NOW,<br>MOVES WITH YOU.</h2>
+            <p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Esse, quaerat?</p>
+            <button class="btn">Show More &#8594;</button>
+        </div>
+        <!-- <div class="curve"></div> -->
+    </section>
+
+    <!--                           features section                       -->
+    <section class="features">
+        <div class="feature-one">
+            <div class="features-row">
+
+                <img src="images/24-hours.png" alt="">
+                <h2>Support Customer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam recusandae corporis reiciendis
+                    dolorum provident similique.</p>
+            </div>
+            <div class="features-row">
+
+                <img src="images/fast.png" alt="">
+                <h2>Free Shipping</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam recusandae corporis reiciendis
+                    dolorum provident similique.</p>
+            </div>
+            <div class="features-row">
+
+                <img src="images/remarketing.png" alt="">
+                <h2>Exchange Offer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam recusandae corporis reiciendis
+                    dolorum provident similique.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--                         new products section                       -->
+    <section class="new-products" id="new-products">
+        <div class="new-new-products">
+            <h2>OUR PRODUCTS</h2>
+            <!-- <div class="btn-btn-hero"> -->
+            <button class="btn-btn" id="btn1" onclick="myFunc()" onmouseover="mover(this)"
+                onmouseout="mout(this)">Headphones</button>
+            <button class="btn-btn" id="btn2" onclick="myFunc2()" onmouseover="mover2(this)"
+                onmouseout="mout2(this)">Airpods</button>
+            <button class="btn-btn" id="btn3" onclick="myFunc3()" onmouseover="mover3(this)"
+                onmouseout="mout3(this)">Watches</button>
+            <!-- </div> -->
+            <div class="products-prd">
+                <div class="products" id="products">
+                    <div class="sub-product">
+                        <div class="products-row">
+                            <img src="images/headphone11.jpg" alt="">
+                            <div class="cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i>NEW</i> </p>
+                            </div>
+                            <p>Sony WH-1000XM4 Wireless</p>
+                            <span class="content">
+                                <p>Rs.12999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="sub-product">
+                        <div class="products-row" id="products-row">
+                            <img src="images/headphone1.jpg" alt="">
+                            <div class="cart">
+                                <!-- <img src="images/heart.png" alt=""> -->
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                        <p>NEW</p>
+                    </div> -->
+                            <p>Razer BlackShark V2</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="sub-product">
+                        <div class="products-row">
+                            <img src="images/headphone7.jpg" alt="">
+                            <div class="cart">
+                                <!-- <img src="images/heart.png" alt=""> -->
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i>SALE</i></p>
+                            </div>
+                            <p>SBeats Mixr Wired Headphones</p>
+                            <span class="content">
+                                <p>Rs.5999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="sub-product">
+                        <div class="products-row">
+                            <img src="images/headphone10.jpg" alt="">
+                            <div class="cart">
+                                <!-- <img src="images/heart.png" alt=""> -->
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                        <p>NEW</p>
+                    </div> -->
+                            <p>Sennheiser HD 4.50BTNC</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <div class="add-cart">
+                                <i class="fa-solid fa-cart-arrow-down">
+                                </i>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="second-products" id="second-products">
+                    <div class="second-sub-product">
+                        <div class="second-products-row">
+                            <img src="images/airpod1.jpg" alt="">
+                            <div class="second-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                                <p><i> NEW</i></p>
+                            </div> -->
+                            <p>Shure Aonic Free</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="second-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="second-sub-product">
+                        <div class="second-products-row">
+                            <img src="images/airpod4.jpg" alt="">
+                            <div class="second-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i> NEW</i></p>
+                            </div>
+                            <p>Earfun Air</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="second-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="second-sub-product">
+                        <div class="second-products-row">
+                            <img src="images/airpod8.jpg" alt="">
+                            <div class="second-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i>SALE</i></p>
+                            </div>
+                            <p>Apple Airpods Pro</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="second-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="second-sub-product">
+                        <div class="second-products-row">
+                            <img src="images/airpod5.jpg" alt="">
+                            <div class="second-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                        <p>NEW</p>
+                    </div> -->
+                            <p>Apple Airpods 3</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="second-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="third-products" id="third-products">
+                    <div class="third-sub-product">
+                        <div class="third-products-row">
+                            <img src="images/watch2.jpg" alt="">
+                            <div class="third-cart">
+                               <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i> NEW</i></p>
+                            </div>
+                            <p>Garmin Venu 2 Plus</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="third-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="third-sub-product">
+                        <div class="third-products-row">
+                            <img src="images/watch3.jpg" alt="">
+                            <div class="third-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                        <p>NEW</p>
+                    </div> -->
+                            <p>Noise Colorfit Ultra Buzz</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="third-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="third-sub-product">
+                        <div class="third-products-row">
+                            <img src="images/watch4.jpg" alt="">
+                            <div class="third-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <!-- <div class="overlay">
+                        <p>NEW</p>
+                    </div> -->
+                            <p>PA Maxima Max Pro</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="third-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="third-sub-product">
+                        <div class="third-products-row">
+                            <img src="images/watch5.jpg" alt="">
+                            <div class="third-cart">
+                                <button class="cart-btn"></i>Add to Cart</button>
+                            </div>
+                            <div class="overlay">
+                                <p><i> SALE</i></p>
+                            </div>
+                            <p>Apple Watch Series 7</p>
+                            <span class="content">
+                                <p>Rs.11999.</p>
+                            </span>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i>
+                            <!-- <span class="content"><button class="btn-hero">Buy</button></span> -->
+                            <!-- <div class="third-add-cart">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="view-all-btn">
+        <a href="gallery.html"><button class="hero-btn-btn">VIEW ALL</button></a>
+    </section>
+    <!-- <hr> -->
+
+
+
+    <section class="arrivals" id="arrivals">
+        <div class="info-arrivals">
+            <div class="info-arrivals-row">
+                <img src="assets/image1.png" alt="">
+                <h1>REFINED SOUND</h1>
+                <p>The sound range is above average and struggles during the highs in a
+                    song but manages to finish off with good sounding lows.</p>
+                <button class="hero-btn" cursor="pointer">Show More &#8594;</button>
+            </div>
+        </div>
+        <div class="second-info-arrivals">
+            <div class="second-info-arrivals-row">
+                <h1>AMAZING NOISE CANCELLATION</h1>
+                <img src="assets/image2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="prod-features">
+        <div class="features-products">
+            <div class="features-products-icons">
+
+                <i class="fa-solid fa-battery-full"></i>
+                <p>24 HOUR BATTERY</p>
+            </div>
+            <div class="features-products-icons">
+
+                <i class="fa-solid fa-volume-high"></i>
+                <p>SUPER POWERFUL BASS</p>
+            </div>
+            <div class="features-products-icons">
+                <i class="fa-solid fa-headphones"></i>
+                <p>PRESSURE LESS EAR MUFFS</p>
+
+            </div>
+            <div class="features-products-icons">
+                <i class="fa-brands fa-bluetooth"></i>
+                <p>BLUETOOTH 5.0</p>
+
+            </div>
+            <div class="features-products-icons">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <P>EFFECTIVE VOICE</P>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--                 best selling products                   -->
+
+    <!--                   featured products section                   -->
+
+    <section class="about">
+        <div class="about-products">
+            <div class="about-products-row">
+                <img src="assets/container1.png" alt="">
+            </div>
+            <div class="about-products-row">
+                <h2>CALL AND MUSIC CONTROL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, totam molestiae
+                    veniam consequuntur quod aliquid amet deleniti officiis beatae
+                    excepturi?</p>
+                <div class="products-row-about">
+                    <div class="products-about-row">
+                        <div class="about-row">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+
+                        <div class="first-about-row">
+                            <h3>HIGH QUALITY AUDIO</h3>
+                        </div>
+                    </div>
+                    <div class="second-products-about-row">
+                        <div class="about-row">
+                            <i class="fa-brands fa-bluetooth"></i>
+                        </div>
+
+                        <div class="second-about-row">
+                            <h3>BLUETOOTH 5</h3>
+                        </div>
+                    </div>
+                    <div class="third-products-about-row">
+                        <div class="about-row">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <div class="third-about-row">
+                            <h3>MICROPHONE</h3>
+                        </div>
+                    </div>
+                    <div class="fourth-products-about-row">
+                        <div class="about-row">
+                            <i class="fa-brands fa-usb"></i>
+                        </div>
+                        <div class="fourth-about-row">
+                            <h3>USB CHARGING CABLE</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--                     description section                       -->
+
+    <section class="subscription">
+        <img class="img1" src="images/email.png" alt="">
+        <!-- <img src="images/email.png" alt=""> -->
+
+        <p>Sign up for the <span>NEWSLETTER</span></p>
+        <div class="subscribe">
+            <input type="email" name="email" placeholder="Enter Your Email...">
+            <button type="submit"><i class="fa-solid fa-envelope"></i>Subscribe</button>
+        </div>
+    </section>
+
+    <!--                           footer section start                          -->
+    <footer class="foot">
+        <div class="footer">
+            <div class="sub-footer">
+                <h2>Contact Us</h2>
+                <!-- <p>Contact US</p> -->
+                <p><i class="fa-solid fa-phone"></i>+9779841266717</p>
+                <p><i class="fa-solid fa-envelope"></i>jenish112@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>New Baneshwor, Kathmandu</p>
+                <!-- <div class="social-media">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-media">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social-media">
+                <i class="fa-brands fa-youtube"></i>
+            </div> -->
+            </div>
+            <div class="sub-footer">
+                <h2>Categories</h2>
+                <p>Hot Deals</p>
+                <p>Headphones</p>
+                <p>Airpods</p>
+                <p>Smart Watch</p>
+            </div>
+            <div class="sub-footer">
+                <h2>INFORMATION</h2>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Orders & Returns</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="sub-footer">
+                <h2>Service</h2>
+                <a href="login.html">
+                    <p>My Accounts</p>
+                </a>
+                <p>View My Cart</p>
+                <p>My WishList</p>
+                <p>Track My Order</p>
+                <p>Help</p>
+            </div>
+        </div>
+        <div class="media-contact">
+            <div class="social-media" id="insta">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social-media" id="fb">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-media" id="tweet">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social-media" id="yt">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+            <p>Copyright &copy; 2022. Designed By <span>Jenish Pokhrel.</span> All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!--                           footer section end                          -->
+
+    <!-- <script src="https://kit.fontawesome.com/f402bda8f3.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
